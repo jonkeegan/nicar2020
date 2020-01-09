@@ -1,0 +1,15 @@
+{
+  "name": "nicar2020",
+  "version": "1.0.0",
+  "main": "nicar2020.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

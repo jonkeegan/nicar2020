@@ -1,0 +1,713 @@
+<!DOCTYPE html><html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/5623b9ff23?a=199564541&amp;v=1158.afc605b&amp;to=M1VaZBdTXxdQBkQIWAofdWYmHXwLXwxEDkUNXl9zClxFFl4JXARFS2NRRAB2UBBQ&amp;rst=1358&amp;ref=http://airquality.deq.louisiana.gov/Data/Site/CITYPARK/Date/2020-01-06&amp;ap=242&amp;be=392&amp;fe=1173&amp;dc=858&amp;perf=%7B%22timing%22:%7B%22of%22:1578590060415,%22n%22:0,%22f%22:1,%22dn%22:2,%22dne%22:33,%22c%22:33,%22ce%22:67,%22rq%22:67,%22rp%22:365,%22rpe%22:407,%22dl%22:374,%22di%22:858,%22ds%22:858,%22de%22:859,%22dc%22:1173,%22l%22:1173,%22le%22:1174%7D,%22navigation%22:%7B%7D%7D&amp;fp=780&amp;fcp=780&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1158.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"5623b9ff23","applicationID":"199564541","transactionName":"M1VaZBdTXxdQBkQIWAofdWYmHXwLXwxEDkUNXl9zClxFFl4JXARFS2NRRAB2UBBQ","queueTime":0,"applicationTime":242,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5623b9ff23",applicationID:"199564541"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width">
+    <title>Site Monitoring Data at New Orleans City Park Site on 1/6/2020 | Louisiana Department of Environmental Quality</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700,900" rel="stylesheet" type="text/css">
+    <link href="/Content/css?v=O3WgiAnwyrAPTkRnJ75APGbq7PlSRM8OPfLn2Pn5v5I1" rel="stylesheet">
+
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <script>var jsdefer = [];</script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="/">Air Monitoring Data &amp; AQI</a></h1>
+            <p><a href="http://deq.louisiana.gov/">« Back to DEQ's Main Website</a></p>
+        </header>
+
+        <nav class="tabs clearfix">
+            <a href="/">Current AQI Data</a>
+            <a href="/Forecast">Forecast</a>
+            <a href="/Regional8Hour">Regional 8 Hour Ozone Data</a>
+            <a href="/RegionalHourly">Regional Hourly Ozone Data</a>
+            <a href="/Data">Site Data</a>
+            <a href="/Subscriptions/Manage">Notifications</a>
+        </nav>
+
+        <!--[if lte IE 8]>
+            <div class="upgrade_browser">
+                <h3>Please Upgrade Your Browser</h3>
+                <p>You are using an <strong>outdated</strong> browser and some features of this website may not work properly.</p>
+                <p>Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            </div>
+        <![endif]-->
+
+        <div id="main">
+            
+
+
+<fieldset class="dropdowns clearfix" id="dataForm" data-url="/Data/Site/__site__/Date/__date__">
+    <div class="fields">
+        <div class="field">
+            <label for="site">Site:</label><br>
+            <select id="site" name="site"><option value="">-- Select Site --</option>
+<option value="ADDIS">Addis Site</option>
+<option value="BAYOUPLAQUEMINE">Bayou Plaquemine Site</option>
+<option value="CAPITOL">Baton Rouge Capitol Site</option>
+<option value="CAPITOL2">Baton Rouge Capitol Site #2</option>
+<option value="CARLYSS">Carlyss Site</option>
+<option value="CARVILLE">Carville Site</option>
+<option value="CHALMETTEVISTA">Chalmette Vista Site</option>
+<option selected="selected" value="CITYPARK">New Orleans City Park Site</option>
+<option value="CONVENT">St. James Parish Courthouse Convent Site</option>
+<option value="DIXIE">Dixie Site</option>
+<option value="DUTCHTOWN">Dutchtown Site</option>
+<option value="FRENCHSETTLEMENT">French Settlement Site</option>
+<option value="GARYVILLE">Garyville Site</option>
+<option value="GRAMERCY">Gramercy Site</option>
+<option value="I610">I-610 Site New Orleans</option>
+<option value="KENNER">Kenner Site</option>
+<option value="LAFAYETTE">Lafayette USGS Site</option>
+<option value="LIGHTHOUSE">Lake Charles Lighthouse Lane Site</option>
+<option value="LSU">Baton Rouge LSU Site</option>
+<option value="MADISONVILLE">Madisonville/Northshore Site</option>
+<option value="MARRERO">Marrero Site</option>
+<option value="MERAUX">Meraux Site</option>
+<option value="MONROE">Monroe Airport Site</option>
+<option value="NEWROADS">New Roads Site</option>
+<option value="NORCO">Norco Site</option>
+<option value="NORTHBATONROUGE">North Baton Rouge Site</option>
+<option value="PORTALLEN">Port Allen Site</option>
+<option value="PRIDE">Pride Site</option>
+<option value="SHREVEPORT">Shreveport Downtown Airport Site</option>
+<option value="SOUTHCALCASIEU">South Calcasieu Site</option>
+<option value="SOUTHERN">Southern University Site</option>
+<option value="STMARTINVILLE">St. Martinville Site</option>
+<option value="STROSE">St. Rose Site</option>
+<option value="THIBODAUX">Thibodaux Site</option>
+<option value="VINTON">Vinton Site</option>
+<option value="WESTLAKE">Westlake Site</option>
+</select>
+        </div>
+    </div>
+    <div class="fields">
+        <div class="field">
+            <label for="date">Date:</label><br>
+<input data-val="true" data-val-date="The field DateTime must be a date." id="date" name="date" size="15" type="text" value="2020-01-06" class="hasDatepicker">            <button>Go</button>
+        </div>
+    </div>
+</fieldset>
+
+<div class="content">
+    <h2>Site Monitoring Data at New Orleans City Park Site on 1/6/2020</h2>
+
+
+<div class="site_data">
+    
+<div class="responsive-table"><div class="wrapper"><table class="data" border="1">
+        <thead>
+            <tr>
+                    <th>
+                        <abbr title="">Time</abbr>
+                    </th>
+                    <th>
+                        <abbr>ITEMP</abbr>
+                            <span><abbr title="Degrees Celsius">(DEGC)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>PM10</abbr>
+                            <span><abbr title="Micrograms Per Cubic Meter">(UG/M3)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>PM25</abbr>
+                            <span><abbr title="Micrograms Per Cubic Meter">(UG/M3)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>WDIR</abbr>
+                            <span><abbr title="Degrees">(DEG)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>WSP</abbr>
+                            <span><abbr title="Miles Per Hour">(MPH)</abbr></span>
+                    </th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td>12:00 AM</td>
+                        <td>25.1</td>
+                        <td>6.4</td>
+                        <td>1.2</td>
+                        <td>191</td>
+                        <td>2</td>
+                </tr>
+                <tr>
+                        <td>1:00 AM</td>
+                        <td>25.1</td>
+                        <td>6.3</td>
+                        <td>1</td>
+                        <td>203</td>
+                        <td>1</td>
+                </tr>
+                <tr>
+                        <td>2:00 AM</td>
+                        <td>25.1</td>
+                        <td>7.6</td>
+                        <td>1.5</td>
+                        <td>211</td>
+                        <td>1</td>
+                </tr>
+                <tr>
+                        <td>3:00 AM</td>
+                        <td>25.1</td>
+                        <td>6.8</td>
+                        <td>1.2</td>
+                        <td>140</td>
+                        <td>0</td>
+                </tr>
+                <tr>
+                        <td>4:00 AM</td>
+                        <td>25.1</td>
+                        <td>5.6</td>
+                        <td>1.1</td>
+                        <td>179</td>
+                        <td>1</td>
+                </tr>
+                <tr>
+                        <td>5:00 AM</td>
+                        <td>25.1</td>
+                        <td>8.1</td>
+                        <td>1.7</td>
+                        <td>181</td>
+                        <td>1</td>
+                </tr>
+                <tr>
+                        <td>6:00 AM</td>
+                        <td>25.1</td>
+                        <td>8.6</td>
+                        <td>3.1</td>
+                        <td>176</td>
+                        <td>1</td>
+                </tr>
+                <tr>
+                        <td>7:00 AM</td>
+                        <td>25.1</td>
+                        <td>11</td>
+                        <td>3.8</td>
+                        <td>184</td>
+                        <td>1</td>
+                </tr>
+                <tr>
+                        <td>8:00 AM</td>
+                        <td>25</td>
+                        <td>33.9</td>
+                        <td>7.2</td>
+                        <td>183</td>
+                        <td>1</td>
+                </tr>
+                <tr>
+                        <td>9:00 AM</td>
+                        <td>25</td>
+                        <td>27.8</td>
+                        <td>14</td>
+                        <td>175</td>
+                        <td>3</td>
+                </tr>
+                <tr>
+                        <td>10:00 AM</td>
+                        <td>24.8</td>
+                        <td>19.6</td>
+                        <td>6.4</td>
+                        <td>204</td>
+                        <td>4</td>
+                </tr>
+                <tr>
+                        <td>11:00 AM</td>
+                        <td>24.8</td>
+                        <td>8.8</td>
+                        <td>5.6</td>
+                        <td>224</td>
+                        <td>4</td>
+                </tr>
+                <tr>
+                        <td>12:00 PM</td>
+                        <td>25.3</td>
+                        <td>6.6</td>
+                        <td>3.5</td>
+                        <td>212</td>
+                        <td>4</td>
+                </tr>
+                <tr>
+                        <td>1:00 PM</td>
+                        <td>25.7</td>
+                        <td>5.9</td>
+                        <td>1.2</td>
+                        <td>215</td>
+                        <td>5</td>
+                </tr>
+                <tr>
+                        <td>2:00 PM</td>
+                        <td>25.9</td>
+                        <td>4.9</td>
+                        <td>3.6</td>
+                        <td>194</td>
+                        <td>5</td>
+                </tr>
+                <tr>
+                        <td>3:00 PM</td>
+                        <td>26</td>
+                        <td>3.2</td>
+                        <td>4.4</td>
+                        <td>192</td>
+                        <td>6</td>
+                </tr>
+                <tr>
+                        <td>4:00 PM</td>
+                        <td>26</td>
+                        <td>8.1</td>
+                        <td>1.7</td>
+                        <td>193</td>
+                        <td>6</td>
+                </tr>
+                <tr>
+                        <td>5:00 PM</td>
+                        <td>25.8</td>
+                        <td>9.1</td>
+                        <td>2.5</td>
+                        <td>187</td>
+                        <td>6</td>
+                </tr>
+                <tr>
+                        <td>6:00 PM</td>
+                        <td>25.7</td>
+                        <td>11.5</td>
+                        <td>0.5</td>
+                        <td>186</td>
+                        <td>5</td>
+                </tr>
+                <tr>
+                        <td>7:00 PM</td>
+                        <td>25.6</td>
+                        <td>16.1</td>
+                        <td>0.7</td>
+                        <td>183</td>
+                        <td>4</td>
+                </tr>
+                <tr>
+                        <td>8:00 PM</td>
+                        <td>25.4</td>
+                        <td>12</td>
+                        <td>0.3</td>
+                        <td>188</td>
+                        <td>4</td>
+                </tr>
+                <tr>
+                        <td>9:00 PM</td>
+                        <td>25.3</td>
+                        <td>8.6</td>
+                        <td>0.7</td>
+                        <td>190</td>
+                        <td>4</td>
+                </tr>
+                <tr>
+                        <td>10:00 PM</td>
+                        <td>25.3</td>
+                        <td>8.3</td>
+                        <td>1.7</td>
+                        <td>190</td>
+                        <td>3</td>
+                </tr>
+                <tr>
+                        <td>11:00 PM</td>
+                        <td>25.3</td>
+                        <td>6.8</td>
+                        <td>2.9</td>
+                        <td>205</td>
+                        <td>3</td>
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                    <th>
+                        <abbr title="">Time</abbr>
+                    </th>
+                    <th>
+                        <abbr>ITEMP</abbr>
+                            <span><abbr title="Degrees Celsius">(DEGC)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>PM10</abbr>
+                            <span><abbr title="Micrograms Per Cubic Meter">(UG/M3)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>PM25</abbr>
+                            <span><abbr title="Micrograms Per Cubic Meter">(UG/M3)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>WDIR</abbr>
+                            <span><abbr title="Degrees">(DEG)</abbr></span>
+                    </th>
+                    <th>
+                        <abbr>WSP</abbr>
+                            <span><abbr title="Miles Per Hour">(MPH)</abbr></span>
+                    </th>
+            </tr>
+        </tfoot>
+    </table></div><table class="data first-column" border="1" style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 201px;">
+        <thead>
+            <tr>
+                    <th style="height: 31px;">
+                        <abbr title="">Time</abbr>
+                    </th>
+                    
+                    
+                    
+                    
+                    
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td>12:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>1:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>2:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>3:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>4:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>5:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>6:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>7:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>8:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>9:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>10:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>11:00 AM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>12:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>1:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>2:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>3:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>4:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>5:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>6:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>7:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>8:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>9:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>10:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+                <tr>
+                        <td>11:00 PM</td>
+                        
+                        
+                        
+                        
+                        
+                </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                    <th style="height: 31px;">
+                        <abbr title="">Time</abbr>
+                    </th>
+                    
+                    
+                    
+                    
+                    
+            </tr>
+        </tfoot>
+    </table></div></div>        <script>
+            jsdefer.push(function(){
+                $(function(){
+
+                    Morris.Line($.extend({},
+                        {
+                            data: [{"Time":"12:00 AM","ITEMP":"25.1","PM10":"6.4","PM25":"1.2","WDIR":"191","WSP":"2","standard":70},{"Time":"1:00 AM","ITEMP":"25.1","PM10":"6.3","PM25":"1","WDIR":"203","WSP":"1","standard":70},{"Time":"2:00 AM","ITEMP":"25.1","PM10":"7.6","PM25":"1.5","WDIR":"211","WSP":"1","standard":70},{"Time":"3:00 AM","ITEMP":"25.1","PM10":"6.8","PM25":"1.2","WDIR":"140","WSP":"0","standard":70},{"Time":"4:00 AM","ITEMP":"25.1","PM10":"5.6","PM25":"1.1","WDIR":"179","WSP":"1","standard":70},{"Time":"5:00 AM","ITEMP":"25.1","PM10":"8.1","PM25":"1.7","WDIR":"181","WSP":"1","standard":70},{"Time":"6:00 AM","ITEMP":"25.1","PM10":"8.6","PM25":"3.1","WDIR":"176","WSP":"1","standard":70},{"Time":"7:00 AM","ITEMP":"25.1","PM10":"11","PM25":"3.8","WDIR":"184","WSP":"1","standard":70},{"Time":"8:00 AM","ITEMP":"25","PM10":"33.9","PM25":"7.2","WDIR":"183","WSP":"1","standard":70},{"Time":"9:00 AM","ITEMP":"25","PM10":"27.8","PM25":"14","WDIR":"175","WSP":"3","standard":70},{"Time":"10:00 AM","ITEMP":"24.8","PM10":"19.6","PM25":"6.4","WDIR":"204","WSP":"4","standard":70},{"Time":"11:00 AM","ITEMP":"24.8","PM10":"8.8","PM25":"5.6","WDIR":"224","WSP":"4","standard":70},{"Time":"12:00 PM","ITEMP":"25.3","PM10":"6.6","PM25":"3.5","WDIR":"212","WSP":"4","standard":70},{"Time":"1:00 PM","ITEMP":"25.7","PM10":"5.9","PM25":"1.2","WDIR":"215","WSP":"5","standard":70},{"Time":"2:00 PM","ITEMP":"25.9","PM10":"4.9","PM25":"3.6","WDIR":"194","WSP":"5","standard":70},{"Time":"3:00 PM","ITEMP":"26","PM10":"3.2","PM25":"4.4","WDIR":"192","WSP":"6","standard":70},{"Time":"4:00 PM","ITEMP":"26","PM10":"8.1","PM25":"1.7","WDIR":"193","WSP":"6","standard":70},{"Time":"5:00 PM","ITEMP":"25.8","PM10":"9.1","PM25":"2.5","WDIR":"187","WSP":"6","standard":70},{"Time":"6:00 PM","ITEMP":"25.7","PM10":"11.5","PM25":"0.5","WDIR":"186","WSP":"5","standard":70},{"Time":"7:00 PM","ITEMP":"25.6","PM10":"16.1","PM25":"0.7","WDIR":"183","WSP":"4","standard":70},{"Time":"8:00 PM","ITEMP":"25.4","PM10":"12","PM25":"0.3","WDIR":"188","WSP":"4","standard":70},{"Time":"9:00 PM","ITEMP":"25.3","PM10":"8.6","PM25":"0.7","WDIR":"190","WSP":"4","standard":70},{"Time":"10:00 PM","ITEMP":"25.3","PM10":"8.3","PM25":"1.7","WDIR":"190","WSP":"3","standard":70},{"Time":"11:00 PM","ITEMP":"25.3","PM10":"6.8","PM25":"2.9","WDIR":"205","WSP":"3","standard":70}],
+                            xkey: "Time",
+                            ykeys: ["O3_8HR","standard"],
+                            labels: ["Ozone","National Ambient Air Quality Standard"]
+                        },
+                        {
+                            element: 'graph-ozone',
+                            parseTime: false,
+                            grid: true,
+                            hideHover: true,
+                            yLabelFormat: function(y){
+                                if (y !== null) {
+                                    return y.toString() + ' ppb';
+                                } else {
+                                    return 'N/A';
+                                }
+                            }
+                        }
+                    ));
+
+
+                    Morris.Line($.extend({},
+                        {
+                            data: [{"Time":"12:00 AM","ITEMP":"25.1","PM10":"6.4","PM25":"1.2","WDIR":"191","WSP":"2","standard":70},{"Time":"1:00 AM","ITEMP":"25.1","PM10":"6.3","PM25":"1","WDIR":"203","WSP":"1","standard":70},{"Time":"2:00 AM","ITEMP":"25.1","PM10":"7.6","PM25":"1.5","WDIR":"211","WSP":"1","standard":70},{"Time":"3:00 AM","ITEMP":"25.1","PM10":"6.8","PM25":"1.2","WDIR":"140","WSP":"0","standard":70},{"Time":"4:00 AM","ITEMP":"25.1","PM10":"5.6","PM25":"1.1","WDIR":"179","WSP":"1","standard":70},{"Time":"5:00 AM","ITEMP":"25.1","PM10":"8.1","PM25":"1.7","WDIR":"181","WSP":"1","standard":70},{"Time":"6:00 AM","ITEMP":"25.1","PM10":"8.6","PM25":"3.1","WDIR":"176","WSP":"1","standard":70},{"Time":"7:00 AM","ITEMP":"25.1","PM10":"11","PM25":"3.8","WDIR":"184","WSP":"1","standard":70},{"Time":"8:00 AM","ITEMP":"25","PM10":"33.9","PM25":"7.2","WDIR":"183","WSP":"1","standard":70},{"Time":"9:00 AM","ITEMP":"25","PM10":"27.8","PM25":"14","WDIR":"175","WSP":"3","standard":70},{"Time":"10:00 AM","ITEMP":"24.8","PM10":"19.6","PM25":"6.4","WDIR":"204","WSP":"4","standard":70},{"Time":"11:00 AM","ITEMP":"24.8","PM10":"8.8","PM25":"5.6","WDIR":"224","WSP":"4","standard":70},{"Time":"12:00 PM","ITEMP":"25.3","PM10":"6.6","PM25":"3.5","WDIR":"212","WSP":"4","standard":70},{"Time":"1:00 PM","ITEMP":"25.7","PM10":"5.9","PM25":"1.2","WDIR":"215","WSP":"5","standard":70},{"Time":"2:00 PM","ITEMP":"25.9","PM10":"4.9","PM25":"3.6","WDIR":"194","WSP":"5","standard":70},{"Time":"3:00 PM","ITEMP":"26","PM10":"3.2","PM25":"4.4","WDIR":"192","WSP":"6","standard":70},{"Time":"4:00 PM","ITEMP":"26","PM10":"8.1","PM25":"1.7","WDIR":"193","WSP":"6","standard":70},{"Time":"5:00 PM","ITEMP":"25.8","PM10":"9.1","PM25":"2.5","WDIR":"187","WSP":"6","standard":70},{"Time":"6:00 PM","ITEMP":"25.7","PM10":"11.5","PM25":"0.5","WDIR":"186","WSP":"5","standard":70},{"Time":"7:00 PM","ITEMP":"25.6","PM10":"16.1","PM25":"0.7","WDIR":"183","WSP":"4","standard":70},{"Time":"8:00 PM","ITEMP":"25.4","PM10":"12","PM25":"0.3","WDIR":"188","WSP":"4","standard":70},{"Time":"9:00 PM","ITEMP":"25.3","PM10":"8.6","PM25":"0.7","WDIR":"190","WSP":"4","standard":70},{"Time":"10:00 PM","ITEMP":"25.3","PM10":"8.3","PM25":"1.7","WDIR":"190","WSP":"3","standard":70},{"Time":"11:00 PM","ITEMP":"25.3","PM10":"6.8","PM25":"2.9","WDIR":"205","WSP":"3","standard":70}],
+                            xkey: "Time",
+                            ykeys: ["PM25"],
+                            labels: ["PM25"]
+                        },
+                        {
+                            element: 'graph-pm25',
+                            parseTime: false,
+                            grid: true,
+                            hideHover: true,
+                            yLabelFormat: function(y){
+                                if (y !== null) {
+                                    return y.toString() + ' ug/m3';
+                                } else {
+                                    return 'N/A';
+                                }
+                            }
+                        }
+                    ));
+                });
+            });
+        </script>
+        <div class="graph-wrapper">
+            <h4>8 Hour Ozone - Rolling Average</h4>
+            <div id="graph-ozone" class="graph" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="350" version="1.1" width="920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.6875px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.4</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="59.21875" y="305" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0 ppb</tspan></text><path fill="none" stroke="#aaaaaa" d="M71.71875,305H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.21875" y="235" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">17.5 ppb</tspan></text><path fill="none" stroke="#aaaaaa" d="M71.71875,235H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.21875" y="165" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">35 ppb</tspan></text><path fill="none" stroke="#aaaaaa" d="M71.71875,165H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.21875" y="95" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">52.5 ppb</tspan></text><path fill="none" stroke="#aaaaaa" d="M71.71875,95H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="59.21875" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">70 ppb</tspan></text><path fill="none" stroke="#aaaaaa" d="M71.71875,25H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="853.4660326086957" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10:00 PM</tspan></text><text x="746.8641304347826" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7:00 PM</tspan></text><text x="675.796195652174" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5:00 PM</tspan></text><text x="604.7282608695652" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">3:00 PM</tspan></text><text x="533.6603260869565" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1:00 PM</tspan></text><text x="427.0584239130435" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10:00 AM</tspan></text><text x="320.4565217391305" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7:00 AM</tspan></text><text x="249.38858695652175" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5:00 AM</tspan></text><text x="178.32065217391306" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">3:00 AM</tspan></text><text x="107.25271739130434" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1:00 AM</tspan></text><path fill="none" stroke="#7a92a3" d="M71.71875,25C80.6022418478261,25,98.36922554347825,25,107.25271739130434,25C116.13620923913044,25,133.9031929347826,25,142.7866847826087,25C151.67017663043478,25,169.43716032608697,25,178.32065217391306,25C187.20414402173915,25,204.9711277173913,25,213.8546195652174,25C222.7381114130435,25,240.50509510869566,25,249.38858695652175,25C258.27207880434787,25,276.0390625,25,284.9225543478261,25C293.80604619565224,25,311.5730298913044,25,320.4565217391305,25C329.34001358695656,25,347.10699728260875,25,355.9904891304348,25C364.8739809782609,25,382.6409646739131,25,391.5244565217392,25C400.40794836956525,25,418.17493206521743,25,427.0584239130435,25C435.9419157608696,25,453.70889945652175,25,462.59239130434787,25C471.475883152174,25,489.2428668478261,25,498.12635869565224,25C507.0098505434783,25,524.7768342391305,25,533.6603260869565,25C542.5438179347826,25,560.3108016304349,25,569.194293478261,25C578.077785326087,25,595.8447690217392,25,604.7282608695652,25C613.6117527173914,25,631.3787364130435,25,640.2622282608696,25C649.1457201086957,25,666.9127038043479,25,675.796195652174,25C684.6796875000001,25,702.4466711956522,25,711.3301630434784,25C720.2136548913045,25,737.9806385869565,25,746.8641304347826,25C755.7476222826087,25,773.5146059782609,25,782.398097826087,25C791.2815896739131,25,809.0485733695652,25,817.9320652173914,25C826.8155570652175,25,844.5825407608696,25,853.4660326086957,25C862.3495244565219,25,880.116508152174,25,889.0000000000001,25" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="71.71875" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="107.25271739130434" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="142.7866847826087" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="178.32065217391306" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="213.8546195652174" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="249.38858695652175" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="284.9225543478261" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="320.4565217391305" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="355.9904891304348" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="391.5244565217392" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="427.0584239130435" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="462.59239130434787" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="498.12635869565224" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="533.6603260869565" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="569.194293478261" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="604.7282608695652" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="640.2622282608696" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="675.796195652174" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="711.3301630434784" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="746.8641304347826" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="782.398097826087" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="817.9320652173914" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="853.4660326086957" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="889.0000000000001" cy="25" r="4" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+        </div>
+        <div class="graph-wrapper">
+            <h4>PM25</h4>
+            <div id="graph-pm25" class="graph" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="350" version="1.1" width="920" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.03125px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.4</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="62.5625" y="305" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0 ug/m3</tspan></text><path fill="none" stroke="#aaaaaa" d="M75.0625,305H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="62.5625" y="235" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5 ug/m3</tspan></text><path fill="none" stroke="#aaaaaa" d="M75.0625,235H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="62.5625" y="165" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10 ug/m3</tspan></text><path fill="none" stroke="#aaaaaa" d="M75.0625,165H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="62.5625" y="95" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15 ug/m3</tspan></text><path fill="none" stroke="#aaaaaa" d="M75.0625,95H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="62.5625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">20 ug/m3</tspan></text><path fill="none" stroke="#aaaaaa" d="M75.0625,25H889" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="853.6114130434784" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10:00 PM</tspan></text><text x="747.4456521739131" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7:00 PM</tspan></text><text x="676.6684782608696" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5:00 PM</tspan></text><text x="605.8913043478261" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">3:00 PM</tspan></text><text x="535.1141304347826" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1:00 PM</tspan></text><text x="428.94836956521743" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">10:00 AM</tspan></text><text x="322.7826086956522" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7:00 AM</tspan></text><text x="252.00543478260872" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5:00 AM</tspan></text><text x="181.22826086956522" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">3:00 AM</tspan></text><text x="110.45108695652175" y="317.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">1:00 AM</tspan></text><path fill="none" stroke="#0b62a4" d="M75.0625,288.2C83.90964673913044,288.9,101.60394021739131,291.525,110.45108695652175,291C119.29823369565219,290.475,136.99252717391306,284.35,145.8396739130435,284C154.68682065217394,283.65,172.38111413043478,287.5,181.22826086956522,288.2C190.07540760869566,288.9,207.76970108695653,290.475,216.61684782608697,289.6C225.4639945652174,288.725,243.15828804347828,284.7,252.00543478260872,281.2C260.8525815217391,277.7,278.546875,265.27500000000003,287.39402173913044,261.6C296.2411684782609,257.925,313.93546195652175,258.975,322.7826086956522,251.8C331.6297554347826,244.625,349.3240489130435,222.04999999999998,358.17119565217394,204.2C367.0183423913044,186.35,384.71263586956525,107.6,393.5597826086957,109C402.4069293478261,110.4,420.101222826087,200.7,428.94836956521743,215.39999999999998C437.79551630434787,230.09999999999997,455.48980978260875,221.525,464.3369565217392,226.60000000000002C473.1841032608696,231.675,490.87839673913044,248.3,499.7255434782609,256C508.5726902173913,263.7,526.2669836956522,288.375,535.1141304347826,288.2C543.961277173913,288.025,561.655570652174,260.2,570.5027173913044,254.6C579.3498641304348,249,597.0441576086957,240.075,605.8913043478261,243.39999999999998C614.7384510869565,246.72499999999997,632.4327445652175,277.875,641.2798913043479,281.2C650.1270380434783,284.525,667.8213315217392,267.9,676.6684782608696,270C685.515625,272.1,703.209918478261,294.85,712.0570652173914,298C720.9042119565217,301.15,738.5985054347827,294.84999999999997,747.4456521739131,295.2C756.2927989130435,295.55,773.9870923913045,300.8,782.8342391304349,300.8C791.6813858695652,300.8,809.3756793478262,297.65,818.2228260869566,295.2C827.069972826087,292.75,844.764266304348,285.05,853.6114130434784,281.2C862.4585597826087,277.34999999999997,880.1528532608697,268.59999999999997,889.0000000000001,264.4" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="75.0625" cy="288.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="110.45108695652175" cy="291" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="145.8396739130435" cy="284" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="181.22826086956522" cy="288.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="216.61684782608697" cy="289.6" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="252.00543478260872" cy="281.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="287.39402173913044" cy="261.6" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="322.7826086956522" cy="251.8" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="358.17119565217394" cy="204.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="393.5597826086957" cy="109" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="428.94836956521743" cy="215.39999999999998" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="464.3369565217392" cy="226.60000000000002" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="499.7255434782609" cy="256" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="535.1141304347826" cy="288.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="570.5027173913044" cy="254.6" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="605.8913043478261" cy="243.39999999999998" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="641.2798913043479" cy="281.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="676.6684782608696" cy="270" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="712.0570652173914" cy="298" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="747.4456521739131" cy="295.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="782.8342391304349" cy="300.8" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="818.2228260869566" cy="295.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="853.6114130434784" cy="281.2" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="889.0000000000001" cy="264.4" r="4" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+        </div>
+</div>
+        </div>
+
+        <div id="spoc">
+            <div id="aqi_explanation">
+                <h4><a href="#">More Information About Understanding AQI Information</a></h4>
+
+                <div class="content" style="display: none;">
+                    <p>The AQI is an index for reporting daily air quality. It tells you how clean or unhealthy your air is, and what associated health effects might be a concern. The AQI focuses on health effects you may experience within a few hours or days after breathing unhealthy air. The following chart provides information regarding the AQI determinations:</p>
+
+                    <table width="100%" border="1">
+                        <tbody>
+                            <tr>
+                                <th>Category</th>
+                                <th><abbr title="Air Quality Index">AQI</abbr> Value</th>
+                                <th>What This Means</th>
+                            </tr>
+                            <tr>
+                                <td class="color" style="background-color:#00e400;">Good</td>
+                                <td class="score">0-50</td>
+                                <td class="meaning">Air quality is considered satisfactory, and air pollution poses little or no risk.</td>
+                            </tr>
+                            <tr>
+                                <td class="color" style="background-color:#ffff00;">Moderate</td>
+                                <td class="score">51-100</td>
+                                <td class="meaning">Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.</td>
+                            </tr>
+                            <tr>
+                                <td class="color alt" style="background-color:#ff7300;">Unhealthy for Sensitive Groups</td>
+                                <td class="score">101-150</td>
+                                <td class="meaning">Members of sensitive groups may experience health effects. The general public is not likely to be affected.</td>
+                            </tr>
+                            <tr>
+                                <td class="color alt" style="background-color:#ff0000;">Unhealthy</td>
+                                <td class="score">151-200</td>
+                                <td class="meaning">Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.</td>
+                            </tr>
+                            <tr>
+                                <td class="color alt" style="background-color:#99004C;">Very Unhealthy</td>
+                                <td class="score">201-300</td>
+                                <td class="meaning">Health warnings of emergency conditions. The entire population is more likely to be affected.</td>
+                            </tr>
+                            <tr>
+                                <td class="color alt" style="background-color:#7E0023;">Hazardous</td>
+                                <td class="score">301-500</td>
+                                <td class="meaning">Health alert: everyone may experience more serious health effects.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p>Any questions about interpreting this monitoring data should be directed to the DEQ Customer Services Section at 1-866-896-5337.</p>
+            <p>TO REPORT ENVIRONMENTAL CONCERNS, INCLUDING ODORS, CONTACT THE DEQ SINGLE POINT OF CONTACT (SPOC) - 225-219-3640 or Toll Free 1-888-763-5424.   In the event of an environmental emergency, citizens are encouraged to first contact their local authorities - police, sheriff, fire department, etc. Otherwise citizens and the regulated community can contact the SPOC line to report environmental concerns during business hours, 8 a.m. - 4:30 p.m., Monday through Friday at the number listed above. To report a concern outside of business hours call 225-342-1234 or the toll free number. Concerns include spills, releases, odors, fish kills, open burning, waste tires and any other types of environmental incidents. Citizens can <a href="http://www.deq.louisiana.gov/apps/forms/irf/forms/">report the incident online</a>.</p>
+            <p><strong>The data has not been quality reviewed or validated. Continuous PM2.5 readings shown are not NAAQS comparable.</strong></p>
+
+        </div>
+
+        <footer>
+            <p>
+                <a href="http://www1.deq.louisiana.gov/portal/tabid/2505/Default.aspx">Ozone and PM2.5 Air Quality Index (AQI) Forecast</a> |
+                <a href="http://deq.louisiana.gov/page/ambient-air-monitoring-data-reports">Ambient Air Monitoring Data and Reports</a> |
+                <a href="http://www.deq.louisiana.gov/">Louisiana Department of Environmental Quality</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="/bundles/js?v=QIB_VOPTzCz9kh3GJZgvqvVyEvfLjuP3cBf47spStPg1"></script>
+
+    
+    <script>$(function () { $.each(jsdefer, function (i, cb) { cb(); }) });</script>
+
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-7115859-1']);
+      _gaq.push(['_setDomainName', 'deq.louisiana.gov']);
+      _gaq.push(['_trackPageview']);
+      _gaq.push(['_trackPageLoadTime']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 266px; left: 468px; z-index: 1; display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all ui-state-disabled" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">January</span>&nbsp;<span class="ui-datepicker-year">2020</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default" href="#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default" href="#">3</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default" href="#">4</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default" href="#">5</a></td><td class="  ui-datepicker-current-day" data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default ui-state-active" href="#">6</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default" href="#">7</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default" href="#">8</a></td><td class="  ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="0" data-year="2020"><a class="ui-state-default ui-state-highlight" href="#">9</a></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">20</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">21</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">22</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">23</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">24</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">25</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">26</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">27</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">28</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">29</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">31</span></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table><div class="ui-datepicker-buttonpane ui-widget-content"><button type="button" class="ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all" data-handler="today" data-event="click">Today</button><button type="button" class="ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all" data-handler="hide" data-event="click">Done</button></div></div></body></html>
