@@ -5,23 +5,29 @@ const cheerio = require('cheerio'); // cheerio builds a jQuery compatible DOM fo
 const today = new Date();
 const yesterday = new Date(today);
 yesterday.setDate(today.getDate() - 1);
-const yesterday_formatted = yesterday.toISOString().split('T')[0];
 // snippet from : https://stackoverflow.com/questions/16686640/function-to-get-yesterdays-date-in-javascript-in-format-dd-mm-yyyy/16686828
+const yesterday_formatted = yesterday.toISOString().split('T')[0];
+const yesterday_month = yesterday_formatted.split("-")[1];
+const yesterday_day = yesterday_formatted.split("-")[2];
+
 
 // there's the original URL we were using (so we can keep track of what we scraped and when)
+let location = "CITYPARK";
 let the_url =
-  "http://airquality.deq.louisiana.gov/Data/Site/CITYPARK/Date/"+yesterday_formatted;
+  "http://airquality.deq.louisiana.gov/Data/Site/"+location+"/Date/"+yesterday_formatted;
 
 console.log("date: "+yesterday_formatted);
 
-// Here's the page we want to scrape....
-const the_file = yesterday_formatted+".html";
+// Here's the local file we want to parse....
+const the_file = location+"/latest/html/"+location+".html";
 
 async function init() {
   try {
     console.log("Parsing data from "+the_file+"....");
 
-    let $ = cheerio.load(fs.readFileSync(the_file)); // this loads the DOM of the saved HTML file in a jQuery friendly format, so we can use familiar '$' style selectors. 
+    // this loads the DOM of the saved HTML file in a jQuery friendly format, 
+    // so we can use familiar '$' style selectors. 
+    let $ = cheerio.load(fs.readFileSync(the_file)); 
     let the_json = []; // this is the array that will hold all of our air quality data...
 
     // let's loop through the tructure of the main table that we want the data from...
@@ -62,8 +68,19 @@ async function init() {
         data: the_json
     }
     
-    // Log out the stringified data, so we can just execute this script as part of a cron job
+    // Log out the stringified data, so we can see what happened.
+    // You could use this instead of writing to files, and just pipe
+    // the output from the node script to another tool...
     console.log(JSON.stringify(return_data));
+
+    let archive_year = yesterday.getFullYear();
+    let archive_month = yesterday_month;
+    let archive_day = yesterday_day;
+
+    // save JSON in the archive directory...
+    fs.writeFileSync(location+"/archive/"+archive_year+"/"+archive_month+"/"+archive_day+"/json/"+location+"_"+yesterday_formatted+".json", JSON.stringify(return_data));
+    // save JSON in the latest directory...
+    fs.writeFileSync(location+"/latest/json/"+location+".json", JSON.stringify(return_data));
 
   } catch (err) {
     console.log("[init] start - Could not execute: " + err);
