@@ -19,7 +19,7 @@ let the_url =
 async function init() {
   try {
     let browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       incognito: false,
       args: ["--no-sandbox", "--disable-setuid-sandbox"]
     });
